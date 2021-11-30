@@ -16,6 +16,8 @@ function [ x,s,A,iter,avgI,exitflag] = ras( Q,g,I,tol,sil,maxiter)
 %           exitflag ... if 1 problem is solved succesfully, if 0 it fails to solving in the given maxiter iterations
 % coded by Ran Gu (Nankai Universtiy)
 % 2021-11-07
+% manuscript is available on http://arxiv.org/abs/2111.13941
+%
 %% initialization
 n = length(g); % n is the dimension
 if nargin <= 5 || isempty(maxiter)
